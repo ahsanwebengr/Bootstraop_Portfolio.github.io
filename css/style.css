@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+:root {
+   --dark1: #21201E;
+   --dark2: #2D2B29;
+   --brand: #ED9902;
+   --white: #ffffff;
+   --body: #9B968B;
+}
+
+body {
+   color: var(--body);
+   font-family: 'rubik', sans-serif;
+   background-color: var(--dark1);
+}
+
+h1,h2,h3,h4,h5,h6 {
+   font-weight: 600;
+   color: var(--white);
+   letter-spacing: 1px;
+   margin: 10px 0;
+}
+
+a {
+   transition: all 0.4s ease;
+   color: #fff;
+   text-decoration: none;
+   font-weight: 500;
+}
+
+a:hover {
+   color: var(--brand);
+}
+
+img {
+   width: 100%;
+}
+
+section {
+   padding-top: 90px;
+   padding-bottom: 90px;
+}
+/* =========================BTN==================== */
+.btn {
+    padding: 13px 17px;
+ }
+ 
+ .btn-brand {
+    background-color: var(--brand);
+    border-color: var(--brand);
+ }
+ 
+ .btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand);
+ }
+ 
+ .btn-outline-brand {
+    background-color: transparent;
+    border-color: var(--brand);
+    color: var(--brand);
+ }
+ 
+ .btn-outline-brand:hover {
+    background-color: var(--brand);
+    color: var(--white);
+ }
+ 
+ 
+ 
+ /* ============================INTRO===================== */
+ .intro {
+    margin-bottom: 40px;
+ }
+ 
+ .intro p {
+    max-width: 500px;
+ }
+ 
+ .text-brand {
+    color: var(--brand);
+ }
+  /* ============================ICONS===================== */
+ .iconbox {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    background-color: var(--dark1);
+    margin-right: 18px;
+    border-radius: 8px;
+ }
+ /* *********************************Custom Scrollbar************************* */
+::-webkit-scrollbar {
+   width: 12px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+   background: var(--white);
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+   background: var(--brand);
+   border-radius: 5px;
+ }
+ 
+  /* ============================DIVIDER===================== */
+ .divider {
+    border: 1px solid rgba(255,255,255,0.1);
+ }
+  /* ============================NAVBAR===================== */
+  .navbar{
+  background-color: var(--dark1);
+  padding: 15px 0;
+  }
+  .navbar .navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;
+  border: none;
+  }
+  .navbar .navbar-brand{
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  }
+  .navbar .nav-link{
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  }
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active{
+ color: var(--brand) !important;
+  }
+    /* ============================ABOUT===================== */
+    #about {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+     }
+     #about .works span {
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: var(--white);
+        margin-right: 8px;
+        text-transform: uppercase;
+     }
+     #about h1{
+        z-index: 2;
+     }
+     
+     #about img {
+        border-radius: 1000px;
+        border: 8px solid var(--brand);
+     }
+#about .name{
+   color: var(--brand);
+   font-family: 'Poppins', sans-serif;
+}
+.person-img {
+    position: relative;
+    z-index: 2;
+ }
+ .ellipse-top {
+    width: 70%;
+    height: 70%;
+    background: linear-gradient(180deg, #4D4A45 0%, #292824 100%);
+    position: absolute;
+    top: -10%;
+    right: 0;
+    border-radius: 1000px;
+    z-index: -1;
+ }
+ 
+ .ellipse-bottom {
+    width: 40%;
+    height: 40%;
+    background: linear-gradient(180deg, #4D4A45 0%, #292824 100%);
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    border-radius: 1000px;
+    z-index: -1;
+ }
+ /* ============================services===================== */   
+ .service {
+    background-color: var(--dark2);
+    padding: 28px;
+    display: flex;
+    border-radius: 8px;
+    margin: 5px;
+ }
+ 
+ .iconbox {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    background-color: var(--dark1);
+    margin-right: 18px;
+    border-radius: 8px;
+   
+ }
+ .service img {
+    height: 46px;
+ }
+ /* ============================PORTFOLIO===================== */ 
+ .portfolio-item {
+    position: relative;
+ }
+ 
+ .portfolio-item .iconbox {
+    background-color: var(--brand);
+    border-radius: 1000px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.4s ease;
+ }
+ 
+ .portfolio-item .iconbox img {
+    height: 28px;
+ }
+ 
+ .portfolio-item:hover .iconbox {
+    opacity: 1;
+    top: 50%;
+ }
+  /* ============================REVIEWS===================== */ 
+  .review {
+    padding: 28px;
+    background-color: var(--dark2);
+    border-radius: 12px;
+ }
+ .review img {
+    width: 65px;
+    border-radius: 100px;
+    border: 2px solid var(--brand);
+ }
+/* ============================PRICING===================== */ 
+ .pricing-table {
+    padding: 34px 24px;
+    background-color: var(--dark2);
+    border-radius: 8px;
+ }
+ 
+ .pricing-header {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+ }
+ 
+ .pricing-table .btn {
+    margin-top: 24px;
+    margin-bottom: 24px;
+ }
+ 
+ .pricing-table ul {
+    padding: 0;
+    list-style: none;
+ }
+ 
+ .pricing-table ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+ }
+ 
+ .pricing-table .iconbox {
+    border-radius: 100px;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 8px;
+ }
+ /* ============================CONTACT===================== */
+ form .form-control {
+    background-color: transparent;
+    border-color: rgba(255,255,255,0.2);
+    color: var(--white);
+ }
+ 
+ form .form-control:focus {
+    box-shadow: none;
+    border-color: var(--brand);
+    background-color: rgba(255,255,255,0.1);
+    color: var(--white);
+ }
+ /* ============================FOOTER===================== */
+ footer {
+    background-color: var(--dark2);
+ }
+ 
+ /* ============================MODEL===================== */
+.modal h2 {
+   color: var(--dark1) ;
+}
+/* *****************************Responsive************************************ */
+@media  screen and (max-width: 988px) {
+   .btn {
+      padding: 6px 10px;
+   } 
+    
+}
